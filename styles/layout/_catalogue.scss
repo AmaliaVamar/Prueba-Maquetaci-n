@@ -1,0 +1,39 @@
+.catalogue {
+  grid-area: catalogue;
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.catalogue-products-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.catalogue-product {
+  width: 40%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.catalogue-product img{
+  width: 80%;
+}
+
+@media (min-width: 768px){
+
+  .catalogue {
+    padding-top: 40px;
+  }
+
+  .catalogue-product img {
+    width: 90%;
+    max-width: 185px;
+    max-height: 250px;
+  }
+
+}

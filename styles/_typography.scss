@@ -1,0 +1,69 @@
+.header-logo span {
+  color: $font-primary-color;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: $font-secundary-color;
+  font-weight: bold;
+}
+
+.categories h2 a {
+  color: $font-primary-color;
+  padding-left: 20px;
+}
+
+.categories a {
+  text-decoration: none;
+  color: $font-secundary-color;
+}
+
+.categories ul li a{
+  display: block;
+  padding: 18px;
+  font-weight: bold;
+}
+
+.categories ul li a:hover{
+  color: $font-primary-color;
+}
+
+.catalogue h2 {
+  color: $font-primary-color;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.featured-product h2 {
+  color: $font-primary-color;
+  text-align: left;
+}
+
+.featured-product h3, h4, p {
+  color: $font-primary-color;
+  margin-right: 15px;
+}
+
+.featured-product h4 {
+  text-align: center;
+  font-weight: normal;
+}
+
+.footer h2 {
+  text-align: center;
+}
+
+.featured-product-modal p {
+  color: $secundary-color;
+}
+
+@media (min-width: 768px){
+  .catalogue h2 {
+    text-align: center;
+  }
+
+  .featured-product h2 {
+    text-align: center;
+  }
+
+}

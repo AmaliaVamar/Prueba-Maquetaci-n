@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Prueba maquetación</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+
+        <h1 class="header-logo">
+          <a href="#">
+            <span>Logo</span>
+          </a>
+        </h1>
+
+        <nav class= "header-nav">
+
+          <button class="btn-nav-small" id="btnNav" type="button" name="button">
+            <img src="images/menu.png" alt="">
+          </button>
+
+
+          <ul class= "header-nav-small" id= "menuSmall">
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+          </ul>
+
+
+          <ul class= "header-nav-desktop">
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+          </ul>
+
+        </nav>
+
+      </header>
+
+      <div class="categories">
+
+        <h2>
+          <a id="categoriesOpenList" href="#">Categories</a>
+        </h2>
+
+        <div class="categories-list" id="categoriesList">
+
+          <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li>
+
+              <a href="#" id="btnSubList">Item 3</a>
+
+              <ul class="categories-sublist" id="subList">
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+              </ul>
+
+            </li>
+            <li><a href="#">Item 4</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="catalogue">
+
+        <h2>Catalogue</h2>
+
+        <div class="catalogue-products-container">
+
+          <div class="catalogue-product">
+            <img src="images/product1.png" alt="producto">
+          </div>
+
+          <div class="catalogue-product">
+            <img src="images/product1.png" alt="producto">
+          </div>
+
+          <div class="catalogue-product">
+            <img src="images/product1.png" alt="producto">
+          </div>
+
+          <div class="catalogue-product">
+            <img src="images/product1.png" alt="producto">
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="featured-product">
+
+        <h2>Featured product</h2>
+
+        <h3>Lorem ipsum dolor</h3>
+
+        <p>Duis autem vel eum iriure dolor in hendrerit in <b> vulputate velit </b> esse molestie consequat, vel illum dolore <i> eu feugiat nulla </i> facilisis at vero eros accumsan et iusto odio.</p>
+
+        <div class="featured-product-content">
+
+          <div class="featured-product-image">
+            <img src="images/product2.png" alt="producto">
+          </div>
+
+          <div class="featured-product-form">
+
+            <form id="form" action="index.html" method="post">
+              <h4> Request form</h4>
+
+              <input id="inputName" class="featured-product-input" type="text" name="name" placeholder="Name" onkeyup="removeErrorName()">
+
+              <input id="inputEmail" class="featured-product-input" type="email" name="email" placeholder="email" onkeyup="removeErrorEmail()">
+
+              <div class="featured-product-form-send">
+                <input id="inputSend" class="featured-product-button" type="submit" value="Send">
+              </div>
+
+              <div id="modal" class="featured-product-modal">
+                <p id="modalTextEmail"></p>
+                <p id="modalText"></p>
+                <input id="modalClose" class="featured-product-button"type="button" value="Ok">
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <footer class="footer">
+
+        <h2>Footer</h2>
+
+        <div class="footer-wrapper">
+
+          <div class="footer-lists">
+            <h3>Heading</h3>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 4</li>
+            </ul>
+          </div>
+
+          <div class="footer-lists">
+            <h3>Heading</h3>
+            <ol>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 4</li>
+            </ol>
+          </div>
+
+          <div class="footer-lists">
+            <h3>Heading</h3>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 4</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+.categories {
+  grid-area: categories;
+  background-color: $primary-color;
+  border-bottom: 2px solid white;
+}
+
+.categories ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: $font-secundary-color;
+}
+
+.categories-list {
+  width: 100%;
+  max-height: 0;
+  position: absolute;
+  overflow: hidden;
+  transition: max-height 0.9s linear;
+}
+
+.categories-list > ul {
+  margin-bottom: 20px;
+  background-color: $secundary-color;
+}
+
+.categories-sublist {
+  background-color: $sublist-color;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.9s linear;
+}
+
+.show-list {
+  max-height: 900px;
+  transition: max-height 0.9s linear;
+}
+
+.show-sublist {
+  max-height: 900px;
+  transition: max-height 0.9s linear;
+}
+
+
+@media (min-width: 768px){
+
+  .categories {
+    padding-top: 40px;
+  }
+
+  .categories-list {
+    width: 100%;
+    overflow: visible;
+    position: relative;
+    padding-left: 40px;
+  }
+
+  .categories-list > ul {
+    width: 80%;
+  }
+}
