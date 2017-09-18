@@ -43,12 +43,12 @@ function sendData (e) {
   var email = inputEmail.value;
   var emailTest = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-  if((name === "" || email === "") || emailTest.test(email)){
+  if((name === "" || email === "") || !emailTest.test(email)){
     if(name === ""){
       inputName.classList.add("error-data");
     }if(email === ""){
       inputEmail.classList.add("error-data");
-    }if(emailTest.test(email)){
+    }if(!emailTest.test(email)){
       modalTextEmail.innerHTML = ("Introduzca un email válido");
       inputEmail.classList.add("error-data");
     }
